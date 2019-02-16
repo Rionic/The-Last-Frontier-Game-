@@ -13,7 +13,7 @@ public class Shoot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			GameObject s = Instantiate (laser, transform.position, Quaternion.identity);
+			GameObject s = Instantiate (laser, transform.position, transform.rotation);
 			s.transform.parent = transform;
 			s.GetComponent<Rigidbody2D> ().AddForce (transform.up * 150);
 		}
