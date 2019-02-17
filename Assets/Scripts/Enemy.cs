@@ -19,4 +19,9 @@ public class Enemy : MonoBehaviour {
 
 		transform.position += distance * speed;
 	}
+
+	void OnTriggerEnter2D(Collider2D collider) {
+		if (collider.tag == "Earth")
+			GameObject.Destroy (gameObject);
+	}
 }

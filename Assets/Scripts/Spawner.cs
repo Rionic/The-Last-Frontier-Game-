@@ -24,7 +24,7 @@ public class Spawner : MonoBehaviour {
 	}
 
 	void Spawn() {
-		Vector3 randomPosition = new Vector3(UnityEngine.Random.Range(-40f, 40f), 0, 0);
+		Vector3 randomPosition = new Vector3(Random.Range(-20f, 20f), Random.Range(-10f, 10f), 0);
 		Object.Instantiate (spawnPrefab, randomPosition, Quaternion.identity);
 	}
 }

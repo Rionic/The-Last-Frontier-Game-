@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class AsteroidCollisions : MonoBehaviour
 {
+	public float timer = 3f;
+
+	private float timeLeft;
+
     // Start is called before the first frame update
     void Start()
     {
-
+		timeLeft = timer;
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -16,12 +20,16 @@ public class AsteroidCollisions : MonoBehaviour
         if (collider.gameObject.tag == "bullet")
         {
             Destroy(this.gameObject);
+			Destroy (collider.gameObject);
         }
     }
 
     // Update is called once per frame
-    void Update()
-    {
-
-    }
+	void Update() {
+		timeLeft -= Time.deltaTime;
+		if (timeLeft < 0) {
+			GameObject.Destroy (gameObject);
+			timeLeft = timer;
+		}
+	}
 }
