@@ -500,6 +500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 765616009}
   - component: {fileID: 765616008}
+  - component: {fileID: 765616010}
   m_Layer: 12
   m_Name: Planet1
   m_TagString: Untagged
@@ -564,6 +565,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &765616010
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 765616007}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.1699998
 --- !u!1 &831405632
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,6 +709,7 @@ MonoBehaviour:
   maxHealth: 100
   damage: 10
   healthBar: {fileID: 622055002}
+  explosion: {fileID: 1931612939791376, guid: 0085f1608122fc244b5b707afae78f18, type: 2}
 --- !u!1 &846506704
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 846506706}
   - component: {fileID: 846506705}
+  - component: {fileID: 846506707}
   m_Layer: 12
   m_Name: Planet2
   m_TagString: Untagged
@@ -766,6 +784,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &846506707
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 846506704}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000003849465, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.3542116
 --- !u!1 &931221313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,6 +1183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1490697707}
   - component: {fileID: 1490697706}
+  - component: {fileID: 1490697708}
   m_Layer: 12
   m_Name: Planet3
   m_TagString: Untagged
@@ -1214,6 +1248,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1490697708
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1490697705}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0000009536743, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.5973701
 --- !u!1 &1626679591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,6 +1317,52 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 80.329666, y: 4.3031945}
   m_EdgeRadius: 0
+--- !u!1 &1910186793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1910186795}
+  - component: {fileID: 1910186794}
+  m_Layer: 0
+  m_Name: Explosion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1910186794
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1910186793}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cda060807188e064abba259b62bfac79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &1910186795
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1910186793}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.9230475, y: 0.85482633, z: 7.325872}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1930241562 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22403254, guid: 60da1df1f7edb3747bea8f735b2768d1,
