@@ -501,6 +501,7 @@ GameObject:
   - component: {fileID: 765616009}
   - component: {fileID: 765616008}
   - component: {fileID: 765616010}
+  - component: {fileID: 765616011}
   m_Layer: 12
   m_Name: Planet1
   m_TagString: Untagged
@@ -574,12 +575,23 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.1699998
+--- !u!114 &765616011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 765616007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0871bc66aa68e604b9162ab703d3caa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &831405632
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +732,7 @@ GameObject:
   - component: {fileID: 846506706}
   - component: {fileID: 846506705}
   - component: {fileID: 846506707}
+  - component: {fileID: 846506708}
   m_Layer: 12
   m_Name: Planet2
   m_TagString: Untagged
@@ -793,12 +806,23 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000003849465, y: 0}
   serializedVersion: 2
   m_Radius: 2.3542116
+--- !u!114 &846506708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 846506704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0871bc66aa68e604b9162ab703d3caa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &931221313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,6 +1208,7 @@ GameObject:
   - component: {fileID: 1490697707}
   - component: {fileID: 1490697706}
   - component: {fileID: 1490697708}
+  - component: {fileID: 1490697709}
   m_Layer: 12
   m_Name: Planet3
   m_TagString: Untagged
@@ -1257,12 +1282,23 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0000009536743, y: 0}
   serializedVersion: 2
   m_Radius: 1.5973701
+--- !u!114 &1490697709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1490697705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0871bc66aa68e604b9162ab703d3caa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1626679591
 GameObject:
   m_ObjectHideFlags: 0

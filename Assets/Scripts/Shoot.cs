@@ -39,4 +39,9 @@ public class Shoot : MonoBehaviour {
 			energyBar.UpdateBar (health, maxHealth);
 		}
 	}
+	
+	public void Refill() {
+		health = maxHealth;
+		energyBar.UpdateBar (health, maxHealth);
+	}
 }
