@@ -7,6 +7,7 @@ TagManager:
   - bullet
   - Earth
   - enemy
+  - player
   layers:
   - Default
   - TransparentFX
