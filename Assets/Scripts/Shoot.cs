@@ -22,12 +22,19 @@ public class Shoot : MonoBehaviour {
 			GameObject s = Instantiate (laser, transform.position, transform.rotation);
 			s.GetComponent<Rigidbody2D> ().AddForce (transform.up * 150);
 			
-			Energy();
+			Energy(decrease);
 		}
 	}
 	
-	void Energy() {
-		health -= decrease;
+	public void Energy(float reduction) {
+		health -= reduction;
 		energyBar.UpdateBar (health, maxHealth);
+	}
+	
+	public void IncreaseEnergy(float reduction) {
+		if (health < maxHealth) {
+			health += reduction;
+			energyBar.UpdateBar (health, maxHealth);
+		}
 	}
 }

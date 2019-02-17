@@ -5,13 +5,16 @@ using UnityEngine;
 public class AsteroidCollisions : MonoBehaviour
 {
 	public float timer = 3f;
-
+	public float damage = 20f;
+	
+	private GameObject player;
 	private float timeLeft;
 
     // Start is called before the first frame update
     void Start()
     {
 		timeLeft = timer;
+		player = GameObject.FindWithTag("player");
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -19,7 +22,9 @@ public class AsteroidCollisions : MonoBehaviour
         Debug.Log("collided");
         if (collider.gameObject.tag == "bullet")
         {
-            Destroy(this.gameObject);
+			player.GetComponent<Shoot>().IncreaseEnergy(damage);
+
+            Destroy (gameObject);
 			Destroy (collider.gameObject);
         }
     }
