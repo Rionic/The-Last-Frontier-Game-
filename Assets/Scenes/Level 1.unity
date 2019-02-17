@@ -195,13 +195,13 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1264552434661010, guid: 5578a09869c24e44b9dffe70a01b8006,
     type: 2}
-  m_PrefabInternal: {fileID: 1355543966}
+  m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
   - component: {fileID: 831405635}
   - component: {fileID: 831405634}
-  - component: {fileID: 831405633}
   - component: {fileID: 831405636}
+  - component: {fileID: 831405633}
   m_Layer: 12
   m_Name: Earth
   m_TagString: Earth
@@ -214,7 +214,7 @@ CircleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 58810560913305020, guid: 5578a09869c24e44b9dffe70a01b8006,
     type: 2}
-  m_PrefabInternal: {fileID: 1355543966}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 831405632}
   m_Enabled: 1
   m_Density: 1
@@ -230,7 +230,7 @@ SpriteRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 212077978928198898, guid: 5578a09869c24e44b9dffe70a01b8006,
     type: 2}
-  m_PrefabInternal: {fileID: 1355543966}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 831405632}
   m_Enabled: 1
   m_CastShadows: 0
@@ -275,7 +275,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4381823851362072, guid: 5578a09869c24e44b9dffe70a01b8006,
     type: 2}
-  m_PrefabInternal: {fileID: 1355543966}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 831405632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -608,61 +608,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 159.52345, y: 6.434943}
   m_EdgeRadius: 0
---- !u!1001 &1355543966
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4381823851362072, guid: 5578a09869c24e44b9dffe70a01b8006, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4381823851362072, guid: 5578a09869c24e44b9dffe70a01b8006, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4381823851362072, guid: 5578a09869c24e44b9dffe70a01b8006, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4381823851362072, guid: 5578a09869c24e44b9dffe70a01b8006, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4381823851362072, guid: 5578a09869c24e44b9dffe70a01b8006, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4381823851362072, guid: 5578a09869c24e44b9dffe70a01b8006, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4381823851362072, guid: 5578a09869c24e44b9dffe70a01b8006, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4381823851362072, guid: 5578a09869c24e44b9dffe70a01b8006, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1264552434661010, guid: 5578a09869c24e44b9dffe70a01b8006, type: 2}
-      propertyPath: m_Name
-      value: Earth
-      objectReference: {fileID: 0}
-    - target: {fileID: 58810560913305020, guid: 5578a09869c24e44b9dffe70a01b8006,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1264552434661010, guid: 5578a09869c24e44b9dffe70a01b8006, type: 2}
-      propertyPath: m_TagString
-      value: Earth
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5578a09869c24e44b9dffe70a01b8006, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1626679591
 GameObject:
   m_ObjectHideFlags: 0
