@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroidPrefab: {fileID: 1700580406598708, guid: dfd75a97693e09344889a7e483bc1738,
     type: 2}
-  respawnTime: 3
+  respawnTime: 5
 --- !u!114 &2080660085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1326,4 +1326,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPrefab: {fileID: 1137316024191482, guid: 8e3070a79d4e621469590ee87c0f3c25,
     type: 2}
-  spawnInterval: 5
+  spawnInterval: 7
