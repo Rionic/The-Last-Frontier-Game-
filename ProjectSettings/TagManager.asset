@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - bullet
-  - Earth
+  tags: [bullet, Earth]
   layers:
   - Default
   - TransparentFX
@@ -20,6 +18,7 @@ TagManager:
   - Pick-ups
   - Bullets
   - Planets
+  - Title Screen
   - Walls
   - 
   - 
