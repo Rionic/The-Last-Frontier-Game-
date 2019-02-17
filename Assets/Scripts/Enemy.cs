@@ -21,7 +21,8 @@ public class Enemy : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D collider) {
-		if (collider.tag == "Earth")
+		if (collider.tag == "Earth" || collider.tag == "bullet")
 			GameObject.Destroy (gameObject);
+
 	}
 }
