@@ -19,7 +19,6 @@ public class AsteroidCollisions : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("collided");
         if (collider.gameObject.tag == "bullet")
         {
 			player.GetComponent<Shoot>().IncreaseEnergy(damage);

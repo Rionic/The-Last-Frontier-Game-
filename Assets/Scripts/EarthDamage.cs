@@ -28,6 +28,7 @@ public class EarthDamage : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (health == 0) {
+			Application.LoadLevel("Game Over");
 		}
 		
 		if (hit == true) {

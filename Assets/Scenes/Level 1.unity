@@ -719,7 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  damage: 10
+  damage: 20
   healthBar: {fileID: 622055002}
   explosion: {fileID: 1931612939791376, guid: 0085f1608122fc244b5b707afae78f18, type: 2}
 --- !u!1 &846506704
@@ -1008,7 +1008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laser: {fileID: 1553747746081444, guid: f1ae638f0358686488a4148d29e2dd02, type: 2}
   maxHealth: 100
-  decrease: 20
+  decrease: 10
   energyBar: {fileID: 1264116522}
 --- !u!114 &931221319
 MonoBehaviour:
