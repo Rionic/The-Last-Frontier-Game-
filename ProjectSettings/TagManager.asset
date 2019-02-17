@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - bullet
+  - Earth
+  - enemy
+  - player
   layers:
   - Default
   - TransparentFX
@@ -19,9 +22,9 @@ TagManager:
   - Pick-ups
   - Bullets
   - Planets
+  - Title Screen
   - Walls
-  - 
-  - 
+  - Enemies
   - 
   - 
   - 
@@ -45,12 +48,15 @@ TagManager:
   - name: Background
     uniqueID: 3148520553
     locked: 0
-  - name: Objects
-    uniqueID: 1512270403
-    locked: 0
   - name: Planets
     uniqueID: 32712245
     locked: 0
+  - name: Objects
+    uniqueID: 1512270403
+    locked: 0
   - name: Player
     uniqueID: 1311479731
+    locked: 0
+  - name: Health
+    uniqueID: 629018919
     locked: 0
