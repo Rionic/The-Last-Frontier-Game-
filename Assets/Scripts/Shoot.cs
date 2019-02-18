@@ -18,8 +18,8 @@ public class Shoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (health > 0) {
-			if (Input.GetKeyDown (KeyCode.Mouse0)) {
+		if (Input.GetKeyDown (KeyCode.Mouse0)) {
+			if (health > 0) {
 				GameObject s = Instantiate (laser, transform.position, transform.rotation);
 				s.GetComponent<Rigidbody2D> ().AddForce (transform.up * 150);
 				

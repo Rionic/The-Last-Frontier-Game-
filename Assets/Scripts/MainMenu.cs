@@ -5,11 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-  public void PlayGame (string level)
+  public void PlayGame ()
   {
-
-   Application.LoadLevel("Level 1");
+     SceneManager.LoadScene("Level 1");
+   //Application.LoadLevel("Level 1");
   }
+
+  public void ReturntoTitleScreen ()
+  {
+    Debug.Log("return asdfs");
+     Application.LoadLevel("Title Scene");
+  }
+
 
 public void QuitGame ()
 {

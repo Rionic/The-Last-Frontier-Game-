@@ -16,6 +16,7 @@ public class PlanetContact : MonoBehaviour {
 	
 	void OnTriggerEnter2D (Collider2D collider) {
 		if (collider.tag == "player") {
+			Debug.Log("collider hit");
 			collider.gameObject.GetComponent<Shoot>().Refill();
 		}
 	}
