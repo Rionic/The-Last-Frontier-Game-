@@ -1,6 +1,4 @@
-# Planet
-
-The Last Frontier
+# The Last Frontier
 
 You are Earth's last hope - protect the planet from invaders!
 
