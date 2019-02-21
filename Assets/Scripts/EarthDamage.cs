@@ -16,6 +16,8 @@ public class EarthDamage : MonoBehaviour {
 	private float temp;
 	private SpriteRenderer spriteRend;
 	private Sprite earth;
+	private GameObject explosion_sound;
+	private AudioSource explosion_src;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +26,8 @@ public class EarthDamage : MonoBehaviour {
 		temp = hitInterval;
 		spriteRend = GetComponent<SpriteRenderer>();
 		earth = spriteRend.sprite;
+		explosion_sound = GameObject.Find ("Explosion Sound");
+		explosion_src = explosion_sound.GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -47,6 +51,7 @@ public class EarthDamage : MonoBehaviour {
 			TakeDamage ();
 			hit = true;
 			spriteRend.sprite = explosion.GetComponent<SpriteRenderer>().sprite;
+			explosion_src.Play ();
 		}
 	}
 
