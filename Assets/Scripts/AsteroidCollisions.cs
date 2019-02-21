@@ -26,6 +26,7 @@ public class AsteroidCollisions : MonoBehaviour
 			player.GetComponent<Player_Score> ().Score_Inc (score_change);
 			Destroy (gameObject);
 			Destroy (collider.gameObject);
+			GameObject.Find ("Hit Sound").GetComponent<AudioSource> ().Play ();
         }
     }
 

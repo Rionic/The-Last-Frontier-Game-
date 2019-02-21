@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TitleScreen : MonoBehaviour {
 	
@@ -11,7 +12,7 @@ public class TitleScreen : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Mouse0)) {
-			Application.LoadLevel("Level 1");
+			SceneManager.LoadScene("Level 1");
 		}
 	}
 }

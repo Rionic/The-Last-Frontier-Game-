@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour {
 		if (collider.tag == "bullet") {
 			Destroy (collider.gameObject);
 			player.GetComponent<Player_Score> ().Score_Inc (score_change);
+			GameObject.Find ("Hit Sound").GetComponent<AudioSource> ().Play ();
 		}
 	}
 }

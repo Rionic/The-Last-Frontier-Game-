@@ -18,6 +18,7 @@ public class PlanetContact : MonoBehaviour {
 		if (collider.tag == "player") {
 			Debug.Log("collider hit");
 			collider.gameObject.GetComponent<Shoot>().Refill();
+			GameObject.Find ("Ping Sound").GetComponent<AudioSource> ().Play ();
 		}
 	}
 }

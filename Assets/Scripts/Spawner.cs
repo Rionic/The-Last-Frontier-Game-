@@ -25,6 +25,7 @@ public class Spawner : MonoBehaviour {
 
 	void Spawn() {
 		Vector3 randomPosition = new Vector3(Random.Range(-20f, 20f), Random.Range(-10f, 10f), 0);
-		Object.Instantiate (spawnPrefab, randomPosition, Quaternion.identity);
+		GameObject enemy = Object.Instantiate (spawnPrefab, randomPosition, Quaternion.identity);
+		enemy.transform.parent = GameObject.Find ("Enemies").transform;
 	}
 }
