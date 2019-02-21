@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EarthDamage : MonoBehaviour {
 
@@ -28,7 +29,7 @@ public class EarthDamage : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (health == 0) {
-			Application.LoadLevel("GameOver");
+			SceneManager.LoadScene("GameOver");
 		}
 		
 		if (hit == true) {

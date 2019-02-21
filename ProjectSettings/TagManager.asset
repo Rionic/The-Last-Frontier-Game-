@@ -10,6 +10,7 @@ TagManager:
   - player
   - score
   - center
+  - score_num
   layers:
   - Default
   - TransparentFX

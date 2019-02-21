@@ -28,5 +28,6 @@ public class Player_Score : MonoBehaviour {
 
 	private void Update_Score () {
 		score_text.GetComponent<Text>().text = score.ToString ();
+		GameObject.FindWithTag ("score_num").GetComponent<Score>().score = score;
 	}
 }
