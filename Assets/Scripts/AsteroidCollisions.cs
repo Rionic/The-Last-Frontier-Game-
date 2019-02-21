@@ -9,21 +9,22 @@ public class AsteroidCollisions : MonoBehaviour
 	
 	private GameObject player;
 	private float timeLeft;
+	private float score_change = 10f;
 
     // Start is called before the first frame update
     void Start()
     {
 		timeLeft = timer;
 		player = GameObject.FindWithTag("player");
-    }
+	}
 
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "bullet")
         {
 			player.GetComponent<Shoot>().IncreaseEnergy(damage);
-
-            Destroy (gameObject);
+			player.GetComponent<Player_Score> ().Score_Inc (score_change);
+			Destroy (gameObject);
 			Destroy (collider.gameObject);
         }
     }

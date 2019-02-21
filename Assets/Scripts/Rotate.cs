@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class Rotate : MonoBehaviour {
 
-	public Vector3 targetPosition;
-
-	void Awake() {
-	}
-
 	// Use this for initialization
 	void Start () {
 	}
