@@ -11,6 +11,7 @@ TagManager:
   - score
   - center
   - score_num
+  - high_score
   layers:
   - Default
   - TransparentFX

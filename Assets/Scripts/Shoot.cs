@@ -22,6 +22,7 @@ public class Shoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        /*
 		if (Input.GetKeyDown (KeyCode.Mouse0)) {
 			if (health > 0) {
 				GameObject s = Instantiate (laser, transform.position, transform.rotation);
@@ -31,9 +32,35 @@ public class Shoot : MonoBehaviour {
 				Energy(decrease);
 			}
 		}
-	}
-	
-	public void Energy(float reduction) {
+        */
+
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            if (health > 0)
+            {
+                GameObject s = Instantiate(laser, transform.position, transform.rotation);
+                s.GetComponent<Rigidbody2D>().AddForce(transform.up * 150);
+                audio_src.Play();
+
+                Energy(decrease);
+            }
+        }
+#endif
+        for (int i = 0; i < Input.touchCount; ++i)
+            if (Input.GetTouch(i).phase == TouchPhase.Ended)
+                if (health > 0)
+                {
+                    GameObject s = Instantiate(laser, transform.position, transform.rotation);
+                    s.GetComponent<Rigidbody2D>().AddForce(transform.up * 150);
+                    audio_src.Play();
+
+                    Energy(decrease);
+                }
+    }
+
+
+    public void Energy(float reduction) {
 		health -= reduction;
 		energyBar.UpdateBar (health, maxHealth);
 	}

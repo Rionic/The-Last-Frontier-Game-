@@ -12,7 +12,6 @@ public class Player_Score : MonoBehaviour {
 	void Start () {
 		score = 0;
 		score_text = GameObject.FindWithTag ("score");
-
 		Update_Score ();
 	}
 	
@@ -24,10 +23,15 @@ public class Player_Score : MonoBehaviour {
 	public void Score_Inc (float damage) {
 		score += damage;
 		Update_Score ();
-	}
+    }
+   
 
 	private void Update_Score () {
-		score_text.GetComponent<Text>().text = score.ToString ();
+        float temp = PlayerPrefs.GetFloat("High Score");
+        if (score > temp)
+            PlayerPrefs.SetFloat("High Score", score);
+
+        score_text.GetComponent<Text>().text = score.ToString ();
 		GameObject.FindWithTag ("score_num").GetComponent<Score>().score = score;
 	}
 }

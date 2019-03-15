@@ -413,6 +413,14 @@ Prefab:
       propertyPath: m_Name
       value: HealthBar
       objectReference: {fileID: 0}
+    - target: {fileID: 109282, guid: 60da1df1f7edb3747bea8f735b2768d1, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 197766, guid: 60da1df1f7edb3747bea8f735b2768d1, type: 2}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60da1df1f7edb3747bea8f735b2768d1, type: 2}
   m_IsPrefabParent: 0
@@ -527,6 +535,10 @@ Prefab:
     - target: {fileID: 11474322, guid: 60da1df1f7edb3747bea8f735b2768d1, type: 2}
       propertyPath: m_Color.g
       value: 0.5631488
+      objectReference: {fileID: 0}
+    - target: {fileID: 109282, guid: 60da1df1f7edb3747bea8f735b2768d1, type: 2}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60da1df1f7edb3747bea8f735b2768d1, type: 2}
@@ -1443,13 +1455,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931221313}
-  m_LocalRotation: {x: -0, y: -0, z: -0.24267916, w: 0.97010666}
+  m_LocalRotation: {x: -0, y: 0, z: -0.9779659, w: -0.20876513}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25961792, y: 0.2596178, z: 0.2596178}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -28.089}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -204.1}
 --- !u!50 &931221317
 Rigidbody2D:
   serializedVersion: 4
@@ -1457,7 +1469,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931221313}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1998,7 +2010,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1852998315}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d8c7785c85924c40a873a683d295312, type: 3}
+  m_Script: {fileID: 11500000, guid: f1c05ab09543eba41840ef22260d6f24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
